@@ -1,0 +1,14 @@
+{
+    "id": "soda",
+    "name": "Sodapop Theme",
+	"author": "Green Meteor",
+	"website": "http://community.greenmeteor.pcriot.com/dashboard/",
+	"github": "https://github.com/GreenMeteor/humhub-soda-theme",
+    "description": "A flavored theme made for the cute side of HumHub.",
+    "keywords": ["theme","soda"],
+    "version": "1.0.0",
+    "humhub": {
+        "minVersion": "1.3"
+    },
+	"license": "AGPL-3.0",
+}
