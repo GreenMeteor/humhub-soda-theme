@@ -14,10 +14,10 @@
       "minVersion":"1.3"
    },
    "screenshots":[  
-      "assets/Screenshot_1.png",
-      "assets/Screenshot_2.png",
-      "assets/Screenshot_3.png",
-      "assets/Screenshot_4.png"
+      "screenshots/Screenshot_1.png",
+      "screenshots/Screenshot_2.png",
+      "screenshots/Screenshot_3.png",
+      "screenshots/Screenshot_4.png"
    ],
    "license":"AGPL-3.0"
 }
