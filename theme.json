@@ -5,13 +5,10 @@
    "website":"http://community.greenmeteor.pcriot.com/dashboard/",
    "github":"https://github.com/GreenMeteor/humhub-soda-theme",
    "description":"A flavored theme made for the cute side of HumHub.",
-   "keywords":[  
-      "theme",
-      "soda"
-   ],
-   "version":"1.0.1",
+   "keywords":["theme", "soda"],
+   "version":"1.0.2",
    "humhub":{  
-      "minVersion":"1.3"
+      "minVersion":"1.3.6"
    },
    "screenshots":[  
       "screenshots/Screenshot_1.png",
