@@ -1,4 +1,5 @@
 <?php
+
 /* @var $this \yii\web\View */
 /* @var $content string */
 \humhub\assets\AppAsset::register($this);
@@ -14,6 +15,9 @@
         <meta name="copyright"content="Green Meteor">
         <?php $this->head() ?>
         <?= $this->render('head'); ?>
+        <!--JS-->
+        <?php $this->registerJsFile($this->theme->getBaseUrl() . '/js/cookie.js'); ?>
+        <?php $this->registerJsFile($this->theme->getBaseUrl() . '/js/styleswitch.js'); ?>
     </head>
     <body>
         <?php $this->beginBody() ?>
@@ -25,12 +29,19 @@
                     <?= \humhub\widgets\SiteLogo::widget(); ?>
                 </div>
 
+                <div class="topbar-actions pull-left" id="search-menu-nav">
+                    <?= \humhub\widgets\TopMenuRightStack::widget(); ?>
+                </div>
+
                 <div class="topbar-actions pull-right">
                     <?= \humhub\modules\user\widgets\AccountTopMenu::widget(); ?>
                 </div>
 
                 <div class="notifications pull-right">
                     <?= \humhub\widgets\NotificationArea::widget(); ?>
+                </div>
+                <div class="topbar-actions styleswitch pull-right">
+                    <a href="" id="switch"><i class="turnoff fa fa-moon-o"></i><i class="turnon fa fa-sun-o"></i></a>
                 </div>
             </div>
         </div>
@@ -46,15 +57,14 @@
                     <!-- load navigation from widget -->
                     <?= \humhub\widgets\TopMenu::widget(); ?>
                 </ul>
-
-                <ul class="nav pull-right" id="search-menu-nav">
-                    <?= \humhub\widgets\TopMenuRightStack::widget(); ?>
-                </ul>
             </div>
         </div>
         <!-- end: second top navigation bar -->
 
         <?= $content; ?>
+
+        <!--JS-->
+        <?php $this->registerJsFile($this->theme->getBaseUrl() . '/js/theme.js'); ?>
 
         <?php $this->endBody() ?>
     </body>
