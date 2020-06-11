@@ -29,7 +29,7 @@
                     <?= \humhub\widgets\SiteLogo::widget(); ?>
                 </div>
 
-                <div class="topbar-actions pull-left" id="search-menu-nav">
+                <div class="topbar-actions pull-left" style="min-width: 50%; padding-top: 6px;"  id="search-menu-nav">
                     <?= \humhub\widgets\TopMenuRightStack::widget(); ?>
                 </div>
 
